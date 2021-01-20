@@ -12,3 +12,12 @@ Print out:
 
 
 '''
+
+import requests 
+
+base_url = "http://demo.codingnomads.co:8080/tasks_api/users"
+response = requests.get(base_url)
+
+print(f"Response Content: {response.content}")
+print(f"Response Status Code: {response.status_code}")
+print(f"Response Encoding: {response.encoding}")
